@@ -1,0 +1,90 @@
+html * {
+    font-family: $space-grotesk;
+}
+
+.all {
+    overflow: visible;
+    background-image: url("../../img/ovals.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -250px 50px;    
+
+    @include breakpoint(tablet) {
+        overflow: visible;
+        background-image: url("../../img/ovals.svg");
+        background-repeat: no-repeat;
+    }
+
+    @include breakpoint(largedesktop) {
+        overflow: visible;
+        background-image: url("../../img/ovals.svg");
+        background-repeat: no-repeat;
+        background-position: -50px 130px;
+        background-size: 530px;
+    }
+}
+ 
+body {
+    overflow-y: visible;
+    overflow-x: hidden;
+    background-color: $black;
+    color: #ffffff;
+    background-image: url("../../img/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 330px 200px;
+
+    @include breakpoint(tablet) {
+        background-image: url("../../img/principal-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 350px 600px;
+        background-position: 450px -10px;
+    }
+
+    @include breakpoint(largedesktop) {
+        background-image: url("../../img/principal-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 450px 700px;
+        background-position: 900px -10px;
+    }
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: transparent;
+    background-image: url("../../img/ovals.svg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: 200px 1230px;
+
+    @include breakpoint(tablet) {
+        padding-left: 16px;
+        padding-right: 16px;
+        background-size: 450px;
+        background-position: 600px 900px;
+    }
+
+    @include breakpoint(largedesktop) {
+        background-size: 530px;
+        background-position: 1200px 1000px;
+    }
+}
+
+p {
+    color: $gray-ligth;
+    font-size: 16px;
+
+    @include breakpoint(tablet) {
+        font-size: 18px;
+    }
+
+    @include breakpoint(largedesktop) {
+        font-size: 20px;
+    }
+}
