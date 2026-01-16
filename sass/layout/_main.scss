@@ -81,7 +81,10 @@
     }
 
     img.principal-desktop {
-        display: none;
+        //display: none;
+        @include breakpoint(mobile) {
+            display: none;
+        }
 
         @include breakpoint(tablet) {
             display: flex;
