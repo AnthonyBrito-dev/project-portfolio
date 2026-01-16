@@ -176,6 +176,44 @@ h3 {
     overflow: visible;
   }
 }
+@media (min-width: 320px) {
+  .hero img.img-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hero img.img-desktop {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    max-width: 350px;
+    max-height: 600px;
+    left: 60%;
+    top: 0px;
+  }
+}
+@media (min-width: 1025px) {
+  .hero img.img-desktop {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    max-width: 350px;
+    max-height: 600px;
+    left: 70%;
+    top: 0px;
+  }
+}
+@media (min-width: 1441px) {
+  .hero img.img-desktop {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    max-width: 450px;
+    max-height: 700px;
+    left: 60%;
+    top: 0px;
+  }
+}
 .hero img.principal-mobile {
   align-items: center;
   align-content: center;
@@ -564,26 +602,6 @@ body {
   overflow-x: hidden;
   background-color: #151515;
   color: #ffffff;
-  background-image: url("../../img/circle.svg");
-  background-repeat: no-repeat;
-  background-size: 120px;
-  background-position: 330px 200px;
-}
-@media (min-width: 768px) {
-  body {
-    background-image: url("../../img/principal-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 350px 600px;
-    background-position: 450px -10px;
-  }
-}
-@media (min-width: 1441px) {
-  body {
-    background-image: url("../../img/principal-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 450px 700px;
-    background-position: 900px -10px;
-  }
 }
 
 * {

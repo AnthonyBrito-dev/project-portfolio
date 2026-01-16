@@ -29,24 +29,6 @@ body {
     overflow-x: hidden;
     background-color: $black;
     color: #ffffff;
-    background-image: url("../../img/circle.svg");
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position: 330px 200px;
-
-    @include breakpoint(tablet) {
-        background-image: url("../../img/principal-desktop.png");
-        background-repeat: no-repeat;
-        background-size: 350px 600px;
-        background-position: 450px -10px;
-    }
-
-    @include breakpoint(largedesktop) {
-        background-image: url("../../img/principal-desktop.png");
-        background-repeat: no-repeat;
-        background-size: 450px 700px;
-        background-position: 900px -10px;
-    }
 } 
 
 * {
